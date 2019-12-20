@@ -8,7 +8,7 @@ plt.plot(x, y, ls="-.", lw=2, c="c", label="plot figure")
 
 plt.legend()
 
-# 函数axhline()和axvline()绘制平行于x轴和y轴的水平参考线
+# 函数axhline()和axvline()绘制平行于x轴和y轴的水平（竖直）参考线
 plt.axhline(y=0.0, c="r", ls="--", lw=2)
 """
 调用签名：
