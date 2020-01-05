@@ -1,0 +1,8 @@
+arr = list(eval(input()))
+maxi = max(arr)
+arr.remove(maxi)
+mini = min(arr)
+arr.remove(mini)
+arr.insert(0, maxi)
+arr.insert(-1, mini)
+print(arr)

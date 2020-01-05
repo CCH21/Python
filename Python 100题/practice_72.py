@@ -1,0 +1,10 @@
+print('请输入3个字符串：')
+string = []
+str1 = input()
+str2 = input()
+str3 = input()
+string.append(str1)
+string.append(str2)
+string.append(str3)
+string.sort()
+print(string)
