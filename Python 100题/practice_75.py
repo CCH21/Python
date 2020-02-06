@@ -1,11 +1,12 @@
-def fun(string):
-    if string[0] != string[1]:
-        return 0
-    for i in range(1, len(string) - 1):
-        if string[i] != string[i + 1]:
-            return i + 1
-    else:
-        return -1
+import collections
+
+
+def fun(s):
+    count = collections.Counter(s)
+    for index, ch in enumerate(s):
+        if count[ch] == 1:
+            return index
+    return -1
 
 
 string = input()
