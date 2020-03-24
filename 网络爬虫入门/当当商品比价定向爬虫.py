@@ -16,7 +16,7 @@ def getHTMLText(url):
 
 def parsePage(ilt, html):
     try:
-        plt = re.findall(r'\"price_n\">&yen;[\d\.]*', html)
+        plt = re.findall(r'\"price_n\">&yen;[\d.]*', html)
         tlt = re.findall(r'name=\"title\" ><a title=\".*?\"', html)
         for i in range(len(plt)):
             price = eval(plt[i].split(';')[1])
